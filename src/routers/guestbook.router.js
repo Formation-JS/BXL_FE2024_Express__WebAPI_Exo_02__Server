@@ -7,7 +7,7 @@ import { authorizeMiddleware } from "../middlewares/auth.middleware.js";
 const guestbookRouter = Router();
 
 guestbookRouter.route('/')
-    .get(authorizeMiddleware("Admin","Member"),paginationMiddleware,guestbookController.getlist)
+    .get(paginationMiddleware,guestbookController.getlist)
     .post(authorizeMiddleware("Admin","Member"),guestbookController.insert);
 
 guestbookRouter.route('/:id')
