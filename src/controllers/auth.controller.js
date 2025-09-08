@@ -10,14 +10,21 @@ const users = [
         username: "Della",
         role: "Admin",
         email: "della@exemple.com",
-        pwd: "$argon2id$v=19$m=16,t=2,p=1$MUxXemFYNkh4NGtZemU2MQ$CeHILvJwkKBFpwZ1K2VJYQ"
+        pwd: "$argon2i$v=19$m=16,t=2,p=1$QlpleEw0bWY2dnZhdjV2WQ$e1jm4Y3sBADqm9uvjtSqIg"
     },
     {
         id: uuidv4(),
         username: "Donald",
         role: "Member",
         email: "donald@exemple.com",
-        pwd: "$argon2id$v=19$m=16,t=2,p=1$MUxXemFYNkh4NGtZemU2MQ$CeHILvJwkKBFpwZ1K2VJYQ"
+        pwd: "$argon2id$v=19$m=16,t=2,p=1$czN4dlUwTGNxYWtaQ2txaw$lShEDvIdfH7nmlhiFNsaLw"
+    },
+    {
+        id: uuidv4(),
+        username: "Gontran",
+        role: "Visitor",
+        email: "gontran@exemple.com",
+        pwd: "$argon2id$v=19$m=16,t=2,p=1$anVwVDhHdFJoSHhpeUt4aQ$BO7N1/w3//h48Rbc+yjVQA"
     }
 ];
 

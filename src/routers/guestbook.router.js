@@ -11,7 +11,7 @@ guestbookRouter.route('/')
     .post(authorizeMiddleware("Admin","Member"),guestbookController.insert);
 
 guestbookRouter.route('/:id')
-    .get(authorizeMiddleware("Admin","Member"),guestbookController.getmessage);
+    .get(authorizeMiddleware(),guestbookController.getmessage);
 
 
 
